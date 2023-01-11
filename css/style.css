@@ -99,7 +99,6 @@ main {
 .grid-container {
     width: 80vh;
     height: 80vh;
-    background-color: red;
     display: flex;
     flex-wrap: wrap;
 }
@@ -108,12 +107,13 @@ main {
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 2px solid white;
+    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.grid-container  .grid-cell .clicked {
+.grid-container  .grid-cell.clicked {
     background-color: aquamarine;
 }
 
