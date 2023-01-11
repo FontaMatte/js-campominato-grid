@@ -14,6 +14,8 @@ playButton.addEventListener('click',
         while (gridContainer.hasChildNodes()) {
             gridContainer.removeChild(gridContainer.firstChild);
           }
+        // ripulisco la console  
+        console.clear();  
 
         if (level.value == 'easy') {  
         // richaimo la funzione per generare la nuova griglia  
@@ -36,7 +38,7 @@ function cellGeneratorEasy () {
     for (let i = 1; i <= 100; i++) {
 
         const gridCell = document.createElement('div');
-        gridCell.classList.add('grid-cell');
+        gridCell.classList.add('grid-cell','easy-level');
         gridCell.innerHTML = i;
         gridContainer.append(gridCell);
 
@@ -63,7 +65,7 @@ function cellGeneratorMedium () {
     for (let i = 1; i <= 81; i++) {
 
         const gridCell = document.createElement('div');
-        gridCell.classList.add('grid-cell');
+        gridCell.classList.add('grid-cell','medium-level');
         gridCell.innerHTML = i;
         gridContainer.append(gridCell);
 
@@ -90,7 +92,7 @@ function cellGeneratorHard () {
     for (let i = 1; i <= 49; i++) {
 
         const gridCell = document.createElement('div');
-        gridCell.classList.add('grid-cell');
+        gridCell.classList.add('grid-cell','hard-level');
         gridCell.innerHTML = i;
         gridContainer.append(gridCell);
 
@@ -110,5 +112,3 @@ function cellGeneratorHard () {
         )
     }
 }
-
-

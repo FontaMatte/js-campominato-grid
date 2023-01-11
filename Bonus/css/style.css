@@ -104,13 +104,26 @@ main {
 }
 
 .grid-container .grid-cell {
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     border: 2px solid white;
     background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.grid-container .grid-cell.easy-level {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+
+.grid-container .grid-cell.medium-level {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+
+.grid-container .grid-cell.hard-level {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
 }
 
 .grid-container  .grid-cell.clicked {
