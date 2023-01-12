@@ -11,9 +11,11 @@ playButton.addEventListener('click',
     function() {
 
         // al play rimuovo la vecchia griglia prima di crearne una nuova
-        while (gridContainer.hasChildNodes()) {
-            gridContainer.removeChild(gridContainer.firstChild);
-          }
+        // while (gridContainer.hasChildNodes()) {
+        //     gridContainer.removeChild(gridContainer.firstChild);
+        // }
+        gridContainer.innerHTML = '';
+
         // ripulisco la console  
         console.clear();  
 
@@ -46,13 +48,15 @@ function cellGeneratorEasy () {
         gridCell.addEventListener('click',
             
             function() {
+                
                 console.log('numero cliccato: ' + i);
+                console.log(this.innerText); //stampa il testo di 'this'
 
-                if (gridCell.classList.contains('clicked')) {
-                    gridCell.classList.remove('clicked');
+                if (this.classList.contains('clicked')) {
+                    this.classList.remove('clicked');
                 }
                 else {
-                    gridCell.classList.add('clicked');
+                    this.classList.add('clicked');
                 }
             }
         )

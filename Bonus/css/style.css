@@ -97,15 +97,15 @@ main {
 
 /* Regole griglia */
 .grid-container {
-    width: 80vh;
-    height: 80vh;
+    width: 70vh;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
 }
 
 .grid-container .grid-cell {
     border: 2px solid white;
-    background-color: red;
+    background-color: aquamarine;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,7 @@ main {
 }
 
 .grid-container  .grid-cell.clicked {
-    background-color: aquamarine;
+    background-color: lightblue;
 }
 
 footer {
